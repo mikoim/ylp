@@ -1,0 +1,22 @@
+{
+  "name": "ドキドキ★病んでミック+",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "「ドキドキ★病んでミック」のプレイを支援する拡張機能",
+  "homepage_url": "https://github.com/mikoim/ylp",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://yandere.life/*"
+      ],
+      "all_frames": true,
+      "js": [
+        "src/jquery-2.1.3.min.js",
+        "src/inject.js"
+      ],
+      "css": [
+        "src/inject.css"
+      ]
+    }
+  ]
+}
